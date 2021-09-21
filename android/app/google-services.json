@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176071081730",
+    "firebase_url": "https://rnminiproject-default-rtdb.firebaseio.com",
+    "project_id": "rnminiproject",
+    "storage_bucket": "rnminiproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176071081730:android:fbdf0f3f01185f77600c1b",
+        "android_client_info": {
+          "package_name": "com.inshorts_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176071081730-f707qhtk7mqpo2b825em1g94gup891bj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inshorts_clone",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "176071081730-asls3e6cbbdjb2m4q5lpniunp9i02p75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQUgjKhrlRcgbPMRw3tpeZLcGLU8lR7-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176071081730-asls3e6cbbdjb2m4q5lpniunp9i02p75.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "176071081730-8f2suaikgetuk5r84123j4oab7ogjqdn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Inshorts-Clone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>176071081730-8f2suaikgetuk5r84123j4oab7ogjqdn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.176071081730-8f2suaikgetuk5r84123j4oab7ogjqdn</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>176071081730-f707qhtk7mqpo2b825em1g94gup891bj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDNb8W-grdDlbDeITMjgpu1BYw6_KL2KiY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>176071081730</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.Inshorts-Clone</string>
+	<key>PROJECT_ID</key>
+	<string>rnminiproject</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rnminiproject.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:176071081730:ios:5b25218a11c19b61600c1b</string>
+	<key>DATABASE_URL</key>
+	<string>https://rnminiproject-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
