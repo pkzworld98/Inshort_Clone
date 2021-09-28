@@ -36,7 +36,12 @@ class Setting extends Component {
     this.props.nightMode();
   };
   handleFeedback = () => {
-    Linking.openURL('mailto:prabhat98kumar@gmail.com');
+    // console.log('enter feddback');
+    try {
+      Linking.openURL('mailto:prabhat98kumar@gmail.com');
+    } catch (e) {
+      console.log(e, 'error in feedback');
+    }
   };
   handleShare = async () => {
     const shareOption = {
@@ -86,7 +91,7 @@ class Setting extends Component {
             />
             <View style={style.listitem}>
               <ListItem.Title
-                style={{fontSize: 15, fontFamily: 'Roboto-Black'}}>
+                style={{fontSize: 15, fontFamily: 'OpenSans-Regular'}}>
                 Night Mode
               </ListItem.Title>
               <Text style={style.stext}>For better readability at night</Text>
@@ -108,6 +113,7 @@ class Setting extends Component {
             <Text style={style.btext}>Share This App</Text>
           </TouchableHighlight>
           <TouchableHighlight
+            underlayColor="rgb(214, 96, 118)"
             activeOpacity={0.5}
             style={style.bitem}
             onPress={this.handleFeedback}>

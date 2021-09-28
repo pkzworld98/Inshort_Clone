@@ -1,8 +1,8 @@
 import {DarkTheme, NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text} from 'native-base';
+
 import React, {Component} from 'react';
-import {FlatList, ScrollView, View} from 'react-native';
+import {FlatList, ScrollView, Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {connect} from 'react-redux';
 import {showMenuBar} from '../../actions';
@@ -24,18 +24,18 @@ class Discover extends Component {
     const header = ({navigation}) => {
       return (
         <Header navigation={navigation} header={this.props.header}>
-          <View style={style.container}>
+          <View style={night ? style.ncontainer : style.container}>
             <View style={style.top}>
               <DiscoveryTopItem
                 icon={'trending-up'}
                 text={'Trending'}
-                color={!night ? 'white' : 'rgb(156, 154, 154)'}
+                color={!night ? 'white' : 'rgb(204, 51, 135)'}
               />
               <DiscoveryTopItem
                 iconstyle={'style'}
                 icon={'bookmark'}
                 text={'Bookmark'}
-                color={!night ? 'white' : 'rgb(156, 154, 154)'}
+                color={!night ? 'white' : 'rgb(204, 51, 135)'}
               />
             </View>
             <View style={style.content}>
@@ -64,6 +64,7 @@ class Discover extends Component {
               headerTitleStyle: style.htext,
               title: 'Settings',
               headerShown: true,
+
               headerBackImage: () => (
                 <Icon
                   style={style.hicon}
@@ -71,7 +72,7 @@ class Discover extends Component {
                   color="rgb(204, 51, 135)"
                 />
               ),
-              headerBackTitleStyle: style.hbtext,
+              headerBackTitleStyle: night ? style.nhbtext : style.hbtext,
               // headerBackTitle: () => <Text style={{color:rgb(201, 91, 115)"}}>Option</Text>,
             }}
           />

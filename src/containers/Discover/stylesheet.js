@@ -25,13 +25,13 @@ export const style = StyleSheet.create({
   },
 
   text: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
     color: 'rgb(201, 91, 115)',
     fontWeight: '600',
     marginLeft: 10,
   },
   htext: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
     color: 'rgb(201, 91, 115)',
     fontSize: 17,
   },
@@ -39,9 +39,20 @@ export const style = StyleSheet.create({
     marginLeft: 7,
   },
   hbtext: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
     marginLeft: 10,
     color: 'black',
     fontSize: 14,
+  },
+  nhbtext: {
+    fontFamily: 'OpenSans-Regular',
+    marginLeft: 10,
+    color: 'white',
+    fontSize: 14,
+  },
+  ncontainer: {
+    height: '100%',
+    display: 'flex',
+    backgroundColor: 'black',
   },
 });

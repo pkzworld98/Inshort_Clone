@@ -4,22 +4,31 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     display: 'flex',
-    // borderWidth: 3,
-    // borderColor: 'white',
+
     height: '100%',
     backgroundColor: 'white',
+    zIndex: 0.8,
 
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     flexDirection: 'column',
   },
   image: {
-    marginTop: 10,
-    flex: 0.3,
+    flex: 0.35,
+    justifyContent: 'flex-start',
+    display: 'flex',
 
-    // borderWidth: 1,
-    paddingLeft: 15,
-    paddingRight: 20,
+    // paddingLeft: 15,
+    // paddingRight: 20,
     marginBottom: 30,
+  },
+  bookmarktitle: {
+    flex: 0.1,
+    color: 'rgb(204, 51, 135)',
+    marginLeft: 5,
+    marginRight: 5,
+    paddingLeft: 20,
+    paddingRight: 20,
+    // borderWidth: 1,
   },
   title: {
     flex: 0.1,
@@ -58,9 +67,14 @@ const style = StyleSheet.create({
   extra: {
     flex: 0.17,
   },
+  star: {
+    position: 'absolute',
+    top: 45,
+    left: 10,
+  },
   imageStyle: {
-    resizeMode: 'contain',
-    alignSelf: 'center',
+    resizeMode: 'cover',
+
     height: '100%',
     width: '100%',
   },
@@ -68,7 +82,27 @@ const style = StyleSheet.create({
     color: 'white',
     textAlign: 'justify',
     fontSize: 14,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
+  },
+
+  header: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    backgroundColor: 'rgb(204, 51, 135)',
+
+    elevation: 5,
+    // borderWidth: 1,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 1,
+    height: 37.3,
+    width: '100%',
   },
   ///night mode
   ndesc: {
@@ -85,7 +119,7 @@ const style = StyleSheet.create({
     // borderColor: '',
     borderWidth: 1,
     borderColor: 'rgb(204, 51, 135)',
-    backgroundColor: 'rgb(232, 227, 227)',
+    backgroundColor: 'grey',
     flex: 0.33,
     borderRadius: 10,
     marginTop: 5,
@@ -96,12 +130,23 @@ const style = StyleSheet.create({
     paddingLeft: 30,
     paddingRight: 30,
   },
+  ncontainer: {
+    flex: 1,
+    display: 'flex',
 
+    // borderColor: 'white',
+    height: '100%',
+    backgroundColor: 'black',
+    zIndex: 0.8,
+
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
+  },
   ndtext: {
-    color: 'black',
+    color: 'white',
     textAlign: 'justify',
     fontSize: 14,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
   },
 });
 

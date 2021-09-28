@@ -8,7 +8,7 @@ export const style = StyleSheet.create({
   optionText: {
     marginLeft: 18,
     fontSize: 15,
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
   },
   option: {
     display: 'flex',
@@ -26,7 +26,7 @@ export const style = StyleSheet.create({
     alignItems: 'flex-start',
   },
   stext: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
     color: 'rgb(201, 91, 115)',
     marginTop: 5,
     fontSize: 12,
@@ -51,7 +51,7 @@ export const style = StyleSheet.create({
     // borderWidth: 1,
   },
   btext: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
     color: 'white',
   },
 
@@ -64,7 +64,7 @@ export const style = StyleSheet.create({
   noptionText: {
     marginLeft: 18,
     fontSize: 15,
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
   },
   noption: {
     display: 'flex',
@@ -83,13 +83,13 @@ export const style = StyleSheet.create({
     alignItems: 'flex-start',
   },
   nstext: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
     color: 'rgb(201, 91, 115)',
     marginTop: 5,
     fontSize: 12,
   },
   nbottom: {
-    backgroundColor: 'grey',
+    backgroundColor: 'black',
     display: 'flex',
     flexDirection: 'column',
     shadowColor: '#000',
@@ -108,7 +108,7 @@ export const style = StyleSheet.create({
     // borderWidth: 1,
   },
   nbtext: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Regular',
     color: 'white',
   },
 });

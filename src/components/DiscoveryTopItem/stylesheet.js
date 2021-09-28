@@ -42,7 +42,9 @@ export const style = StyleSheet.create({
   ncontainer: {
     // flex: 1,
     borderRadius: 10,
-    backgroundColor: 'rgb(232, 227, 227)',
+    backgroundColor: 'black',
+    borderColor: 'rgb(204, 51, 135)',
+    borderWidth: 1,
 
     padding: 10,
     width: 90,
@@ -65,6 +67,6 @@ export const style = StyleSheet.create({
   },
   ntext: {
     fontSize: 12,
-    color: 'black',
+    color: 'white',
   },
 });

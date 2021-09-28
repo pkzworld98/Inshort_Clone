@@ -9,7 +9,6 @@ import 'react-native-gesture-handler';
 import React, {useEffect} from 'react';
 
 import {SafeAreaView} from 'react-native';
-import {NativeBaseProvider, Text, Box} from 'native-base';
 
 import {useDispatch} from 'react-redux';
 import {fetchNews} from './src/actions';
@@ -20,11 +19,9 @@ import store from './src/store';
 const App = () => {
   return (
     <Provider store={store}>
-      <NativeBaseProvider>
-        <SafeAreaView style={{flex: 1}}>
-          <Home />
-        </SafeAreaView>
-      </NativeBaseProvider>
+      <SafeAreaView style={{flex: 1}}>
+        <Home />
+      </SafeAreaView>
     </Provider>
   );
 };

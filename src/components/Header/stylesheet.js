@@ -4,6 +4,7 @@ import {borderWidth} from 'styled-system';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
+    zIndex: 1,
   },
   header: {
     flex: 0.05,
@@ -67,11 +68,11 @@ export const style = StyleSheet.create({
   text: {
     fontWeight: '700',
     color: 'white',
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     letterSpacing: 1,
   },
   textright: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     color: 'white',
   },
   boxleft: {
@@ -97,7 +98,9 @@ export const style = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
 
-    backgroundColor: 'rgb(196, 194, 194)',
+    backgroundColor: 'black',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgb(204, 51, 135)',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -107,11 +110,11 @@ export const style = StyleSheet.create({
   ntext: {
     fontWeight: '700',
     color: 'rgb(204, 51, 135)',
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     letterSpacing: 1,
   },
   ntextright: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     color: 'black',
   },
 });

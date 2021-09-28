@@ -50,7 +50,7 @@ export const style = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     color: 'white',
   },
   stagger: {
@@ -77,7 +77,7 @@ export const style = StyleSheet.create({
     zIndex: 1,
   },
   stageerText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 12,
     color: 'black',
     fontWeight: 'bold',
@@ -103,11 +103,12 @@ export const style = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
-    backgroundColor: 'rgb(237, 235, 235)',
+    backgroundColor: 'rgb(204, 51, 135)',
     height: 90,
     borderBottomStartRadius: 6,
     width: 140,
     display: 'flex',
+    borderWidth: 1,
     padding: 10,
     justifyContent: 'space-around',
     right: 0,
@@ -122,25 +123,27 @@ export const style = StyleSheet.create({
     flexDirection: 'row',
     // borderWidth: 1,
     zIndex: 1,
-    backgroundColor: 'rgb(196, 194, 194)',
+    backgroundColor: 'black',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
     },
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgb(204, 51, 135)',
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
 
     elevation: 5,
   },
   ntext: {
-    fontFamily: 'Roboto-Black',
+    fontFamily: 'OpenSans-Bold',
     color: 'rgb(204, 51, 135)',
   },
   nstageerText: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 12,
-    color: 'rgb(204, 51, 135)',
+    color: 'black',
     fontWeight: 'bold',
     marginLeft: 10,
   },

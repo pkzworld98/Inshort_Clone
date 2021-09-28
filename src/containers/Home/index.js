@@ -8,7 +8,7 @@ import {Dimensions} from 'react-native';
 import PagerView from 'react-native-pager-view';
 import WebViewContainer from '../WebViewContainer';
 import AppCarousel from '../../components/AppCarousel';
-import {fetchNews} from '../../actions';
+import {fetchBookMark, fetchNews} from '../../actions';
 import {fetchCategory} from '../../actions/category';
 import LoadingScreen from '../../components/LoadingScreen';
 import Setting from '../../components/Setting';
@@ -23,6 +23,7 @@ const mapDispatchToProps = disptach => {
   return {
     fetchNews: (...args) => disptach(fetchNews(...args)),
     fetchCategory: (...args) => disptach(fetchCategory(...args)),
+    bookMarkedNewslist: (...args) => disptach(fetchBookMark(...args)),
   };
 };
 
@@ -32,23 +33,25 @@ class Home extends Component {
     this.myRef = React.createRef();
   }
   componentDidMount() {
-    this.props.fetchNews();
+    this.props.fetchNews(1);
     this.props.fetchCategory();
+    // this.props.bookMarkedNewslist();
   }
-
-  render() {
+  componentDidUpdate() {
     this.props.navigateTo !== null
       ? this.myRef.current.setPage &&
         this.myRef.current.setPage(this.props.navigateTo)
       : null;
+  }
 
+  render() {
     console.log(this.props.app, 'helo');
     return (
       <PagerView
         style={{flex: 1}}
         ref={this.myRef}
-        setPage={this.props.navigateTo}
-        initialPage={0}>
+        // setPage={this.props.navigateTo}
+        initialPage={1}>
         <View key="1">
           {/* <Setting /> */}
           <Discover header={'Discover'} />

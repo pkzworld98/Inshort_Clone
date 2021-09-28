@@ -4,18 +4,21 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Feather';
 import Icon2 from 'react-native-vector-icons/FontAwesome5';
 import {connect} from 'react-redux';
-import {showTrendingNews} from '../../actions';
+import {showBookMarkedNews, showTrendingNews} from '../../actions';
 import {style} from './stylesheet';
 const mapStateToProps = state => ({
   night: state.helper.nightMode,
+  bookMarkList: state.news.bookMarkedNewsList,
 });
 const mapDispatchToProps = dispatch => ({
   showTrending: () => dispatch(showTrendingNews()),
+  showBookMark: (...args) => dispatch(showBookMarkedNews(...args)),
 });
 class DiscoveryTopItem extends Component {
   handler = name => {
-    console.log('ghusa', name);
-    name === 'Trending' ? this.props.showTrending() : null;
+    name === 'Trending'
+      ? this.props.showTrending()
+      : this.props.showBookMark(this.props.bookMarkList);
   };
   render() {
     let night = this.props.night;

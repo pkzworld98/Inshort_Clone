@@ -67,7 +67,7 @@ class WebViewContainer extends Component {
       console.log('error');
     }
 
-    console.log(this.state.staggerToggle, 'yei aya', news);
+    // console.log(this.state.staggerToggle, 'yei aya', news);
 
     return (
       <View style={style.parent}>
@@ -84,7 +84,7 @@ class WebViewContainer extends Component {
                     name="chevron-left"
                     size={20}
                     // style={{backgroundColor: 'black'}}
-                    color={!night ? 'white' : 'black'}
+                    color="white"
                   />
                 </TouchableOpacity>
               </View>
@@ -99,80 +99,47 @@ class WebViewContainer extends Component {
               style={{borderWidth: 1, borderColor: 'white'}}> */}
                 {this.state.staggerToggle ? (
                   <View style={!night ? style.stagger : style.nstagger}>
-                    <Stagger
-                      visible={this.state.staggerToggle}
-                      initial={{
-                        opacity: 0,
-                        scale: 0,
-                        translateY: 34,
-                      }}
-                      animate={{
-                        translateY: 0,
-                        scale: 1,
-                        opacity: 1,
-                        transition: {
-                          type: 'timing',
-                          mass: 0.8,
-                          stagger: {
-                            offset: 30,
-                            reverse: true,
-                          },
-                        },
-                      }}
-                      exit={{
-                        translateY: 34,
-                        scale: 0.5,
-                        opacity: 0,
-                        transition: {
-                          duration: 100,
-                          stagger: {
-                            offset: 30,
-                            reverse: true,
-                          },
-                        },
+                    <TouchableOpacity
+                      activeOpacity={0.5}
+                      // onPress={() => {
+                      //   this.handleBackNavigation('All News');
+                      // }}
+                      onPress={() => Linking.openURL(news)}>
+                      <View style={style.staggerItem}>
+                        <Icon
+                          name="globe"
+                          size={20}
+                          // style={{backgroundColor: 'rgb(40,41,40)'}}
+                          color={!night ? 'rgb(204, 51, 135)' : 'white'}
+                        />
+                        <Text
+                          style={
+                            !night ? style.stageerText : style.nstageerText
+                          }>
+                          Open in Browser
+                        </Text>
+                      </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      activeOpacity={0.5}
+                      onPress={() => {
+                        this.handleCopyText(news);
                       }}>
-                      <TouchableOpacity
-                        activeOpacity={0.5}
-                        // onPress={() => {
-                        //   this.handleBackNavigation('All News');
-                        // }}
-                        onPress={() => Linking.openURL(news)}>
-                        <View style={style.staggerItem}>
-                          <Icon
-                            name="globe"
-                            size={20}
-                            // style={{backgroundColor: 'rgb(40,41,40)'}}
-                            color={!night ? 'rgb(204, 51, 135)' : 'grey'}
-                          />
-                          <Text
-                            style={
-                              !night ? style.stageerText : style.nstageerText
-                            }>
-                            Open in Browser
-                          </Text>
-                        </View>
-                      </TouchableOpacity>
-                      <TouchableOpacity
-                        activeOpacity={0.5}
-                        onPress={() => {
-                          this.handleCopyText(news);
-                        }}>
-                        <View style={style.staggerItem}>
-                          <Icon2
-                            name="copy1"
-                            size={20}
-                            // style={{backgroundColor: 'rgb(40,41,40)'}}
-                            color={!night ? 'rgb(204, 51, 135)' : 'grey'}
-                          />
-                          <Text
-                            style={
-                              !night ? style.stageerText : style.nstageerText
-                            }>
-                            Copy Link
-                          </Text>
-                        </View>
-                      </TouchableOpacity>
-                    </Stagger>
+                      <View style={style.staggerItem}>
+                        <Icon2
+                          name="copy1"
+                          size={20}
+                          // style={{backgroundColor: 'rgb(40,41,40)'}}
+                          color={!night ? 'rgb(204, 51, 135)' : 'white'}
+                        />
+                        <Text
+                          style={
+                            !night ? style.stageerText : style.nstageerText
+                          }>
+                          Copy Link
+                        </Text>
+                      </View>
+                    </TouchableOpacity>
                   </View>
                 ) : null}
 
@@ -183,7 +150,7 @@ class WebViewContainer extends Component {
                     name="dots-three-vertical"
                     size={20}
                     // style={{backgroundColor: 'black'}}
-                    color={!night ? 'white' : 'black'}
+                    color="white"
                   />
                 </TouchableOpacity>
               </View>

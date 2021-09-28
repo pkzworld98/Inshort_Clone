@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import {style} from './stylesheet';
-import {Image, Text} from 'native-base';
+
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon2 from 'react-native-vector-icons/Ionicons';
 import {connect} from 'react-redux';
@@ -67,7 +67,7 @@ class Header extends Component {
                     name="md-settings-sharp"
                     size={20}
                     // style={{backgroundColor: 'black'}}
-                    color={night ? 'black' : 'white'}
+                    color="white"
                   />
                 </TouchableOpacity>
               )}
@@ -95,15 +95,13 @@ class Header extends Component {
                     name="right"
                     size={15}
                     // style={{backgroundColor: 'black'}}
-                    color={night ? 'black' : 'white'}
+                    color="white"
                   />
                 </View>
               ) : null}
             </TouchableOpacity>
           </View>
-        ) : (
-          <View style={style.headerblank}></View>
-        )}
+        ) : null}
 
         <View style={style.content}>{this.props.children}</View>
       </View>

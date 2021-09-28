@@ -2,13 +2,15 @@ import {style} from './stylesheet';
 
 import React, {Component} from 'react';
 import {FlatList, ScrollView, TouchableOpacity, View} from 'react-native';
-import {Image, Text} from 'native-base';
+// import {Image, Text} from 'native-base';
 import {connect} from 'react-redux';
 import {flexGrow} from 'styled-system';
 import {filterNews, handleNavigationRequest} from '../../actions';
+import {Image, Text} from 'react-native-elements';
 const mapStateToProps = state => {
   return {
     categoryList: state.category.categoryList,
+    OffSet: state.news.newsOffset,
   };
 };
 const mapDispatchToProps = dispatch => {
@@ -18,7 +20,7 @@ const mapDispatchToProps = dispatch => {
 };
 class CategoryBox extends Component {
   handleClick = label => {
-    this.props.filterNews(label);
+    this.props.filterNews(1, label, this.props.OffSet);
   };
   render() {
     return (
